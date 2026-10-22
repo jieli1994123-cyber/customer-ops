@@ -1,0 +1,40 @@
+name: "First customer (share your result)"
+description: "You ran customer-ops on your product. Tell us what happened, good or bad."
+title: "[result] <your product>"
+labels: ["result"]
+body:
+  - type: input
+    id: product
+    attributes:
+      label: Your product (name + URL)
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Furthest you got
+      options:
+        - "Got a shortlist, didn't contact anyone yet"
+        - "Contacted leads, no replies yet"
+        - "Got replies"
+        - "Got a call / meeting"
+        - "Got a paying customer"
+        - "It didn't find anything useful"
+    validations:
+      required: true
+  - type: textarea
+    id: numbers
+    attributes:
+      label: Your funnel (rough numbers are fine)
+      placeholder: "scanned 120 → shortlisted 9 → emailed 6 → 2 replies → 1 call"
+  - type: textarea
+    id: story
+    attributes:
+      label: What worked, what broke
+      description: "Which segment/playbook, what was surprisingly good, what was wrong."
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Wall of first customers
+      options:
+        - label: "OK to quote this issue (with my GitHub handle) on FIRST-CUSTOMERS.md"

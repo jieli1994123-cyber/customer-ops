@@ -16,7 +16,9 @@ This gives founders AI to *choose* customers.
 <!-- DOGFOOD STORY GOES HERE: replace with your real funnel numbers before launch.
      Format that worked for career-ops: "N companies scanned. M shortlisted. K emails sent. J replies. H meetings." -->
 
-*This section is reserved for the maintainer's own funnel — scanned → shortlisted → sent → replies → meetings — with real numbers, updated as they change.*
+customer-ops is finding its own first users right now. The live funnel and every user result (each linked to the user's own post) are on **[FIRST-CUSTOMERS.md](FIRST-CUSTOMERS.md)**. Nothing there is estimated.
+
+**Used it on your product?** [Share your result](../../issues/new?template=first-customer.yml), even if it found nothing.
 
 ## What this is
 
