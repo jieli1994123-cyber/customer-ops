@@ -49,7 +49,7 @@ Then `/outcome` classifies the replies you paste back and drafts follow-ups, and
 ### 1. Get the framework
 
 ```bash
-gh repo fork <owner>/customer-ops --clone
+git clone https://github.com/jieli1994123-cyber/customer-ops.git
 cd customer-ops
 ```
 
