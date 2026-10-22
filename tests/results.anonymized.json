@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "framework": "customer-ops v1",
+    "note": "Anonymized public copy. Buyer leads were real companies found in public channels; names, contacts and URLs are removed here out of respect for them. Seller products are fictional test fixtures. Total = Fit*2 + Contact + Timing (max 14).",
+    "test_date": "2026-10-22",
+    "totals": {
+      "candidates_scanned": 93,
+      "deep_dived": 44,
+      "scenarios": 4,
+      "shortlisted": 17,
+      "skipped_or_parked": 27
+    }
+  },
+  "scenarios": [
+    {
+      "finding": "Launch dates are public and founders are named — timing signals are the strongest of any segment. But 0 of 3 had a published email, and launch-day outreach is already late for a first video; the list must be run continuously against upcoming launches.",
+      "funnel": {
+        "deep_dived": 8,
+        "scanned": 47,
+        "shortlisted": 3
+      },
+      "id": "launchvideo",
+      "segment": "Products launching now / next (Product Hunt, BetaList, crowdfunding)",
+      "seller_product": "LaunchClip — launch-video SaaS for products going to market ($99/video, fictional)",
+      "leads": [
+        {
+          "lead": "launchvideo-A",
+          "score": {
+            "contact": 1,
+            "fit": 4,
+            "timing": 2,
+            "total": 11
+          },
+          "why_now": "Launched on Product Hunt today; iOS app still in App Store review = next launch imminent; serial maker who ships several apps a year"
+        },
+        {
+          "lead": "launchvideo-B",
+          "score": {
+            "contact": 1,
+            "fit": 4,
+            "timing": 2,
+            "total": 11
+          },
+          "why_now": "Pre-launch post yesterday, officially launched on PH today; founder personally answering community questions"
+        },
+        {
+          "lead": "launchvideo-C",
+          "score": {
+            "contact": 0,
+            "fit": 4,
+            "timing": 2,
+            "total": 10
+          },
+          "why_now": "Launched on PH yesterday; B2B SaaS selling to creators with ongoing video needs"
+        }
+      ]
+    },
+    {
+      "finding": "Pain evidence is unusually rich and self-scoring (incumbent price hikes created dated, specific complaint posts). Two traps: 5 of 12 raw candidates were competitors' content marketing in disguise, and real pain posts decay within weeks — authors DIY a cron fix fast.",
+      "funnel": {
+        "deep_dived": 12,
+        "scanned": 12,
+        "shortlisted": 3
+      },
+      "id": "pingtail",
+      "segment": "Indie developers & small SaaS teams unhappy with incumbent monitoring tools",
+      "seller_product": "Pingtail — lightweight uptime monitoring SaaS ($9/mo, fictional)",
+      "leads": [
+        {
+          "lead": "pingtail-A",
+          "score": {
+            "contact": 1,
+            "fit": 4,
+            "timing": 2,
+            "total": 11
+          },
+          "why_now": "PH launch today across web/Android/Chrome; iPhone app in review — biggest traffic spike still ahead, lots of surface to keep alive"
+        },
+        {
+          "lead": "pingtail-B",
+          "score": {
+            "contact": 2,
+            "fit": 4,
+            "timing": 1,
+            "total": 11
+          },
+          "why_now": "Production app down up to 24h because Supabase free tier auto-paused; lost his biggest prospect; publicly wrote he would set up monitoring before next launch; runs multiple live apps"
+        },
+        {
+          "lead": "pingtail-C",
+          "score": {
+            "contact": 1,
+            "fit": 4,
+            "timing": 1,
+            "total": 10
+          },
+          "why_now": "~1 month ago: monitor showed 100% while users saw 500s (DB outage masked by CDN cache); rewrote his checks, still on free-tier tooling"
+        }
+      ]
+    },
+    {
+      "finding": "Competitor review sections are a self-supplying lead list: store name + date + pain in their own words, down to feature level. Counter-trap: the purest pain (community forums) is anonymous and unreachable, and review streams mix this month's complaints with 2021's — dates must be checked one by one.",
+      "funnel": {
+        "deep_dived": 12,
+        "scanned": 17,
+        "shortlisted": 5
+      },
+      "id": "returnease",
+      "segment": "Independent Shopify store owners publicly unhappy with returns apps",
+      "seller_product": "ReturnEase — self-serve returns portal for Shopify stores ($39/mo, fictional)",
+      "leads": [
+        {
+          "lead": "returnease-A",
+          "score": {
+            "contact": 2,
+            "fit": 5,
+            "timing": 2,
+            "total": 14
+          },
+          "why_now": "Oct 2026 review: switched Loop -> AfterShip, upgraded to top tier, exchanges and store-credit returns still broken after 3 weeks of backend runaround — a live second-switch window"
+        },
+        {
+          "lead": "returnease-B",
+          "score": {
+            "contact": 2,
+            "fit": 4,
+            "timing": 2,
+            "total": 12
+          },
+          "why_now": "Jun 2026 public complaint: '30-minute setup' took hours; automation broken on lower tiers (carrier not auto-selected, returns fail); discount promise reversed"
+        },
+        {
+          "lead": "returnease-C",
+          "score": {
+            "contact": 2,
+            "fit": 4,
+            "timing": 1,
+            "total": 11
+          },
+          "why_now": "After ~2 years on Loop, publicly complained in Nov 2025 that cancelling the account is 'nearly impossible' — clear exit intent, only contract-locked"
+        },
+        {
+          "lead": "returnease-D",
+          "score": {
+            "contact": 2,
+            "fit": 4,
+            "timing": 1,
+            "total": 11
+          },
+          "why_now": "Feb 2025: on Loop, returns vs exchanges indistinguishable and exchanges spawn duplicate orders polluting repeat-purchase metrics; kept being charged after cancelling"
+        },
+        {
+          "lead": "returnease-E",
+          "score": {
+            "contact": 1,
+            "fit": 4,
+            "timing": 1,
+            "total": 10
+          },
+          "why_now": "Dec 2025 complaint: weeks into Loop and still not configured; onboarding specialist replies slowly — a self-serve simple portal is the direct antidote"
+        }
+      ]
+    },
+    {
+      "finding": "Opening press releases are the richest source: media-contact blocks name the owner and often print a real email (clinic websites hide behind forms). The tax: 'new clinic' search results are polluted by DSO chains (Aspen 1,100+ locations, LaserAway, mydentist) that must be filtered out one by one, and verified emails exist for only 3 of 12 deep-dived candidates.",
+      "funnel": {
+        "deep_dived": 12,
+        "scanned": 17,
+        "shortlisted": 6
+      },
+      "id": "remindly",
+      "segment": "Independent dental & aesthetic clinics (new openings + visible front-desk pain)",
+      "seller_product": "Remindly Clinic — appointment reminders & no-show backfill for independent dental/med spas ($49/mo, fictional)",
+      "leads": [
+        {
+          "lead": "remindly-A",
+          "score": {
+            "contact": 2,
+            "fit": 5,
+            "timing": 2,
+            "total": 14
+          },
+          "why_now": "Relaunched Aug 2026 and building its patient book; long high-value bookings (implants, full-mouth reconstruction) are the most expensive chairs to leave empty"
+        },
+        {
+          "lead": "remindly-B",
+          "score": {
+            "contact": 1,
+            "fit": 5,
+            "timing": 2,
+            "total": 13
+          },
+          "why_now": "Opened Mar 2026; only open Mon-Thu, so chair time is scarcer than usual"
+        },
+        {
+          "lead": "remindly-C",
+          "score": {
+            "contact": 2,
+            "fit": 4,
+            "timing": 2,
+            "total": 12
+          },
+          "why_now": "Opened Sep 23, 2026 — under a month old, still in the schedule-shaping phase"
+        },
+        {
+          "lead": "remindly-D",
+          "score": {
+            "contact": 1,
+            "fit": 4,
+            "timing": 2,
+            "total": 11
+          },
+          "why_now": "Launched Oct 1, 2026: rotating clinic with deliberately scarce slots that book out — an unfilled cancellation cannot be backfilled ad hoc"
+        },
+        {
+          "lead": "remindly-E",
+          "score": {
+            "contact": 1,
+            "fit": 4,
+            "timing": 1,
+            "total": 10
+          },
+          "why_now": "Multiple WebMD reviews: phones ring unanswered all day, lines constantly busy — the front desk is demonstrably underwater"
+        },
+        {
+          "lead": "remindly-F",
+          "score": {
+            "contact": 1,
+            "fit": 4,
+            "timing": 1,
+            "total": 10
+          },
+          "why_now": "Reviews describe 55-minute in-room waits and front-desk chaos; the practice explicitly tells patients it does NOT notify a waitlist when slots open — the exact feature being sold"
+        }
+      ]
+    }
+  ]
+}

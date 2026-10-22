@@ -1,0 +1,10 @@
+# Your data — never commit your outreach workspace.
+# GitHub forks of public repos are public; use a private repo for your copy.
+/profile/
+/leads/
+/outreach/
+/tracker.md
+
+# Raw test data with real people/company names — keep local
+/_private/
+.DS_Store
